@@ -1,0 +1,246 @@
+%-------------------------
+% CV modificado de  Jake's resume
+% Empieza a modificar en la línea 108
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{geometry}
+
+\definecolor{mygrey}{RGB}{127,127,127}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{\color{mygrey}}[\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\dimexpr\textwidth-0.15in}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\textcolor{mygrey}{\small #2}} \\
+      {\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\dimexpr\textwidth-0.15in}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\dimexpr\textwidth-0.15in}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=18pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+%
+\begin{center}
+    \Huge{\scshape \textcolor{mygrey}{APOSTOLOS}} \textbf{\Huge \scshape TZINAS} \\ \vspace{-10pt}
+    \textcolor{mygrey}{\small
+      \href{mailto:tzinas@tzinas.com}{tzinas@tzinas.com} $|$
+      +30 6948483021 $|$
+      \href{https://github.com/tzinas}{github.com/tzinas} $|$
+      \href{https://scholar.google.com/citations?user=-_BUVCgAAAAJ&hl=en}{Google Scholar}
+    }
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {National Technical University of Athens}{Oct 2019 - now}
+    {MEng in Electrical and Computer Engineering}{}
+\resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\small
+\hspace{0.15in}
+\begin{tabularx}{\dimexpr\textwidth-0.15in}{@{}l@{\hspace{30pt}}X}
+  \textbf{Languages:}    &JavaScript, TypeScript, C/C++, SQL, Python, Solidity, Rust, HTML/CSS \\
+  [3pt]
+  \textbf{Technologies:} &Linux, Docker, Blockchains, Google Cloud, PostgreSQL, React.js, Next.js, NGINX
+\end{tabularx}
+\vspace{-10pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {\href{https://commonprefix.com}{Common Prefix}}{Sep 2021 - now}
+  {Founding Engineer and Researcher}{}
+  \resumeItemListStart
+    \resumeItem{First employee in a bootstrapped consulting company with \textbf{\$2.4M} revenue during the first two years.}
+    \resumeItem{Led the deployment of an \textbf{Ethereum} committee-based bridge, managing over \textbf{\$3M} in TVL.}
+    \resumeItem{Run an Axelar (Cosmos) mainnet validator with more than \textbf{\$100K} in delegations.}
+    \resumeItem{Coauthored an academic paper proving secure a deployed PoW protocol with more
+                than \textbf{2K miners} and \textbf{500M transactions} on testnet.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {\href{https://www.mayainsights.com}{Maya Insights}}{Feb 2021 - Sep 2021}
+  {Front-end engineer}{}
+  \resumeItemListStart
+    \resumeItem{Created a \textbf{React.js} front-end application for data analytics used in production by a dozen businesses.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {NutriDice}{May 2020 - Aug 2021}
+  {Full-stack engineer}{}
+  \resumeItemListStart
+    \resumeItem{Redesigned and developed a production-grade \textbf{RESTful} web application for nutritionists.}
+    \resumeItem{Achieved a \textbf{9x} application speed increase leveraging optimization techniques in \textbf{SciPy} and \textbf{NumPy}.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------Publications-----------
+\section{Publications}
+\hspace{0.15in}
+\begin{minipage}{\dimexpr\textwidth-0.15in}
+  \textbf{\href{https://fc24.ifca.ai/preproceedings/122.pdf}{On-Chain Timestamps Are Accurate}} \\
+  \underline{Apostolos Tzinas}, Srivatsan Sridhar, Dionysis Zindros \\
+  \textit{Financial Cryptography 2024}\\
+
+  \vspace{-5pt}
+
+  \textbf{\href{https://eprint.iacr.org/2024/210.pdf}{Rollerblade: Replicated Distributed Protocol Emulation on Top of Ledgers}} \\
+  Dionysis Zindros, \underline{Apostolos Tzinas}, David Tse \\
+  \textit{Preprint}\\
+
+  \vspace{-5pt}
+
+  \textbf{\href{https://eprint.iacr.org/2024/200.pdf}{A Better Proof-of-Work Fork Choice Rule}} \\
+  K. Kreder, S. Shastry, \underline{A. Tzinas}, S. Vishwanath, D. Zindros\\
+  \textit{Preprint}\\
+
+  \vspace{-5pt}
+
+  \textbf{\href{https://eprint.iacr.org/2023/605.pdf}{The Principal–Agent Problem in Liquid Staking}} \\
+  \underline{Apostolos Tzinas}, Dionysis Zindros\\
+  \textit{Financial Cryptography Workshop on Trusted Smart Contracts 2023}
+\end{minipage}
+
+%-----------TALKS-----------
+\section{Invited Talks}
+\small
+\hspace{0.15in}
+\begin{tabularx}{\dimexpr\textwidth-0.168in}{@{}l@{\hspace{50pt}}Xr}
+  \textbf{NTUA}, Corelab                &On-Chain Timestamps Are Accurate              &Feb 2024\\
+  [5pt]
+  \textbf{TU Wien}, Security \& Privacy &The Principal–Agent Problem in Liquid Staking &Apr 2023\\
+  [5pt]
+  \textbf{NTUA}, Corelab                &The Principal–Agent Problem in Liquid Staking &Mar 2023\\
+  [5pt]
+  \textbf{Stanford}, Tse Lab            &The Principal–Agent Problem in Liquid Staking &Feb 2023\\
+\end{tabularx}
+\vspace{-10pt}
+
+%-----------AWARDS-----------
+\section{Awards/Tournaments}
+\small
+\hspace{0.15in}
+\begin{tabularx}{\dimexpr\textwidth-0.16in}{@{}l@{\hspace{50pt}}l@{\hspace{83pt}}Xr}
+  2017 &5th &Greek Olympiad in Informatics &Athens, GR\\
+  [5pt]
+  2016 &39th &International Tournament in Informatics &Shumen, BG \\
+  [5pt]
+  2016 &31th &Junior Balkan Olympiad in Informatics &Skopje, MK \\
+  [5pt]
+  2016 &2nd &Greek Olympiad in Informatics &Athens, GR
+\end{tabularx}
+\vspace{-10pt}
+
+%-----------TEACHING-----------
+\section{Teaching}
+\small
+\hspace{0.15in}
+\begin{tabularx}{\dimexpr\textwidth-0.16in}{@{}l@{\hspace{50pt}}Xr}
+  \textbf{Complexity and recursion} &Greek National Team in Informatics &Apr 2021\\
+  [5pt]
+  \textbf{Dynamic programming} &Greek National Team in Informatics &May 2022\\
+\end{tabularx}
+\vspace{-10pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\small
+\hspace{0.15in}
+\begin{tabularx}{\dimexpr\textwidth-0.15in}{@{}l@{\hspace{93pt}}X}
+  \textbf{\href{https://github.com/tzinas/calabu}{Full node}} &A \textbf{JavaScript} full node implementation for the Marabu blockchain. \\
+  [5pt]
+  \textbf{\href{https://www.npmjs.com/package/react-percentages-slider}{Percentage slider}} &An npm \textbf{React.js} component with more than \textbf{2.7K downloads}.\\
+\end{tabularx}
+\vspace{-10pt}
+
+\end{document}
